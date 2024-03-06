@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Google Sheets Map</title>
+</head>
+<body>
+    <header>
+        <h1>Google Sheets Integration</h1>
+    </header>
+
+    <button class="toggle-btn" onclick="toggleSection('map')">Map</button>
+    <button class="toggle-btn" onclick="toggleSection('coordinates')">Coordinates</button>
+
+    <div id="map"></div>
+
+    <div id="coordinates">
+        <table id="coordinatesTable"></table>
+    </div>
+
+    <footer>
+        <p>© 2024 Your Company</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgdDnsYriqRHkl9yPgTD-5tijLVff8OZk&callback=initMap"></script>
+</body>
+</html>
